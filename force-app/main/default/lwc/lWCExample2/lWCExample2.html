@@ -1,0 +1,40 @@
+<template>
+    <lightning-input type="text" label="Enter some text" onchange={onchangeaction} value={name} name="namet"></lightning-input>
+   <br/>
+    <lightning-button variant="brand" label="save" title="Primary action" onclick={save} class="slds-m-left_x-small"></lightning-button>
+    <br/>
+    Hi {name1}
+
+<br/>
+<br/>
+<br/>
+
+  <template for:each={cities} for:item="city">
+    <p key={city}>{city}</p> 
+  </template>
+  <lightning-button variant="neutral" label="change" onclick={changecities}> </lightning-button>
+
+<br/>
+ <template iterator:item={countries}>
+   <p style="color: cadetblue;" key={item.value}>{item.value} </p>
+ </template>
+
+<br/>
+<br/>
+<br/>
+<lightning-input style="color: cadetblue;" type="number" label="Enter first number" onchange={action1} value={number1}></lightning-input>
+<lightning-input  style="color: cadetblue;" type="number" label="Enter second number" onchange={action2} value={number2}></lightning-input>
+<lightning-input   style="color: cadetblue;" type="number" label="Enter third number" onchange={action3} value={number3}></lightning-input>
+<br/>
+<lightning-button variant="brand" label="submit" title="action" onclick={submit} class="slds-m-left_x-small"></lightning-button>
+<br/>
+<br/>
+<br/>
+<lightning-input style="color: black;" type="number" label="Enter a number" onchange={uniqueaction} name="one"></lightning-input>
+<lightning-input  style="color: black;" type="number" label="Enter b number" onchange={uniqueaction} name="two"></lightning-input>
+<lightning-input   style="color: black;" type="number" label="Enter c number" onchange={uniqueaction} name="three"></lightning-input>
+<br/>
+<lightning-button variant="brand" label="Click here" title="action" onclick={clickhere} class="slds-m-left_x-small"></lightning-button>
+The Greater Number is {greaterNum} !
+
+</template>

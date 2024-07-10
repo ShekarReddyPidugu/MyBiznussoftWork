@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Related Opportunities">
+
+       <!-- <lightning-datatable
+          key-field="Id"
+          data={opps.data}
+          columns={columns}>
+        </lightning-datatable>-->
+
+
+        <template for:each={opps} for:item="op">
+            
+                {op.Name} &nbsp;&nbsp; &nbsp; {op.Id}
+           
+        </template>
+
+
+    </lightning-card>
+
+</template>

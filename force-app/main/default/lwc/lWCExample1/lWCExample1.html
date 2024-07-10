@@ -1,0 +1,32 @@
+<template>
+    <lightning-card title="My First LWC Component" icon-name="standard:account" footer="help" style="background-color: bisque;">
+
+         <lightning-button-group>
+            <lightning-button label="Submit" variant="success" onclick={save} style="background-color: rgb(207, 196, 219);color:darkcyan">
+            
+            </lightning-button>
+            <lightning-button label="Cancel" variant="success" onclick={cancel} style="background-color: rgb(207, 196, 219);color:darkcyan" >
+            
+            </lightning-button>
+         </lightning-button-group>
+
+         <lightning-button-menu>
+            <lightning-button 
+              variant="base"
+              label="Revert" 
+              <!-- onclick={handleClick}  -->
+            ></lightning-button>
+         </lightning-button-menu>
+    </lightning-card>
+ <table style="width:100%;">
+    <tr>
+        <td>S.No</td>
+        <td>Name</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>LWC</td>
+    </tr>
+ </table>
+   
+</template>

@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Contacts">
+        <lightning-input value={searchword} label="Enter Name" onchange={handleonchange} style="color:blueviolet"></lightning-input><br/>
+        <lightning-datatable
+        key-field="id"
+        data={cons.data}
+        columns={colms}>
+        </lightning-datatable>
+
+    </lightning-card>
+    
+</template>

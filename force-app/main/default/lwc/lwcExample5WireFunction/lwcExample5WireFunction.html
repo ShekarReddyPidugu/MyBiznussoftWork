@@ -1,0 +1,34 @@
+<template>
+    <template for:each={cities} for:item="c">
+        <p key={c}>{c}</p> 
+      </template>
+    <lightning-layout>
+<lightning-layout-item size="6">
+<lightning-card title="Using Wire a Property">
+    <lightning-input value={searchkey} label="Enter Name" onchange={handleonchange} style="color:blueviolet"></lightning-input><br/>
+    <lightning-datatable
+    key-field="id"
+    data={cons.data}
+    columns={colms}>
+    </lightning-datatable>
+
+</lightning-card>
+</lightning-layout-item>
+
+<lightning-layout-item size="6">
+<lightning-card title="Using Wire a Function">
+    <lightning-input value={searchkey1} label="Enter Name" onchange={handleonchange1} style="color:blueviolet"></lightning-input><br/>
+    <lightning-datatable
+    key-field="Id"
+    data={returneddata}
+    columns={colmns}
+    onsave={handleSave}
+    draft-values={draftvals}>
+    </lightning-datatable>
+
+</lightning-card>
+</lightning-layout-item>
+
+
+    </lightning-layout>
+</template>
